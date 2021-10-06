@@ -99,7 +99,8 @@ const toogleReminder = async (id) => {
       {showAddTask &&  <AddTask onAdd={addTask}  />}
      {tasks.length > 0 ? (<Tasks tasks={tasks} 
      onDelete={deleteTask} 
-     onToogle={toogleReminder} />) :( 'No task to show')} 
+     onToogle={toogleReminder}
+      />) :( 'No task to show')} 
       </>
       }/>
      <Route path='/about' component={About}/>
